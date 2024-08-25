@@ -1,7 +1,47 @@
 {
     "questions":[
         {
-            "question":"this is a question"
+          "question": "Which method is used to add an element at the end of an array in JavaScript?",
+          "options": ["push()", "pop()", "shift()", "unshift()"],
+          "correct_answer": 0,
+          "points": 10
+        },
+        {
+          "question": "What does the 'this' keyword refer to in JavaScript?",
+          "options": ["The global object", "The current object", "The previous object", "The next object"],
+          "correct_answer": 1,
+          "points": 10
+        },
+        {
+          "question": "Which hook is used to manage state in a functional React component?",
+          "options": ["useState", "useEffect", "useContext", "useReducer"],
+          "correct_answer": 0,
+          "points": 10
+        },
+        {
+          "question": "In React, what is the purpose of the useEffect hook?",
+          "options": ["To manage side effects", "To manage state", "To create components", "To handle events"],
+          "correct_answer": 0,
+          "points": 10
+        },
+        {
+          "question": "Which of the following is a JavaScript data type?",
+          "options": ["Number", "Boolean", "String", "All of the above"],
+          "correct_answer": 3,
+          "points": 10
+        },
+        {
+          "question": "How do you create a component in React?",
+          "options": ["By using a function or a class", "By using a CSS file", "By using an HTML file", "By using a database"],
+          "correct_answer": 0,
+          "points": 10
+        },
+        {
+          "question": "What is the virtual DOM in React?",
+          "options": ["A lightweight copy of the actual DOM", "A direct reference to the DOM", "A new browser feature", "A type of JavaScript variable"],
+          "correct_answer": 0,
+          "points": 10
         }
-    ]
+      ]
+      
 }
