@@ -8,6 +8,7 @@ import Questions from './components/Questions';
 import StartScreen from './components/StartScreen';
 import NextButton from './components/NextButton';
 import ProgressBar from './components/ProgressBar';
+import FinishPage from './FinishPage';
 
 function App() {
   
@@ -51,10 +52,12 @@ function App() {
             points: isCorrect ? state.points + state.questions[state.index].points : state.points // Add points if correct
           };
         case "nextQuestion":
+          const islastQuestion = state.index + 1 >= state.questions.length; // state.index + 1 because index starts with 0 and length starts with 1 
           return{
             ...state,
             index: state.index + 1,
-            answer:null
+            answer:null,
+            currentState: islastQuestion ? "finished" : state.currentState
           }; 
       default:
         throw new Error("unknown action");
@@ -88,6 +91,7 @@ function App() {
         <NextButton dispatch= {dispatch} answer={state.answer}/>
         </>
         )}
+      {state.currentState === "finished" && <FinishPage total_points_to_get = {state.questions.length * 10} final_points = {state.points}/>}  
       
     </div>
   );
